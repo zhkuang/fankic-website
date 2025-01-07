@@ -1,0 +1,205 @@
+
+.container {
+    width: 100rem;
+    margin: 0 auto;
+}
+
+/*---------------------------------------------------------*/
+
+header {
+    width: 100%;
+    height: 7.33rem;
+    line-height: 7.33rem;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 6.67rem;
+    height: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 8.3rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: Gotham Book, Gotham Book;
+    font-weight: 400;
+    font-size: 1.17rem;
+    color: #000000;
+    transition: all 0.3s linear;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(90deg, #3F5EFB 0%, #FC466B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.language-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.33rem;
+    cursor: pointer;
+}
+
+.language-wrapper img {
+    width: 1.17rem;
+    height: 1.17rem;
+}
+
+/*---------------------------------------------------------*/
+
+
+.demo h1 {
+    font-family: Gotham Bold, Gotham Black;
+    font-weight: 400;
+    font-size: 7.33rem;
+    text-align: center;
+}
+
+.demo h1 span {
+    display: block;
+    background: linear-gradient(90deg, #3F5EFB 0%, #FC466B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.benefits {
+    margin-top: 3.3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.benefits span {
+    font-family: Gotham Bold, Gotham Bold;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #000000;
+}
+
+.languages {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.languages .demo-language-wrapper {
+    width: 10rem;
+    height: 4.67rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2.33rem;
+    background: linear-gradient(90deg, rgba(63, 94, 251, 1), rgba(252, 70, 107, 1));
+    position: relative;
+    cursor: pointer;
+}
+
+.languages .demo-language-wrapper .demo-language-button {
+    text-align: center;
+    background: #fff;
+    border-radius: 2.33rem;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.languages .demo-language-wrapper .demo-language-button span {
+    font-family: Gotham Bold, Gotham Bold;
+    font-size: 1.33rem;
+    background: linear-gradient(90deg, #3F5EFB 0%, #FC466B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.demo .video-wrapper {
+    border-radius: 2rem 2rem 2rem 2rem;
+    width: 100rem;
+    height: 56.33rem;
+    background: #ccc;
+    margin-top: 2.67rem;
+}
+
+/*---------------------------------------------------------*/
+
+.why-fankic, .services, .work-model, .faq, footer {
+    background: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.why-fankic h2, .services h2, .work-model h2, .faq h2, footer p {
+    margin-bottom: 20px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature {
+    width: 30%;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.feature h3 {
+    margin-bottom: 15px;
+}
+
+/*---------------------------------------------------------*/
+
+.service {
+    margin-bottom: 40px;
+}
+
+.service h3 {
+    margin-bottom: 15px;
+}
+
+.service ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+}
+
+footer .social-media {
+    margin-top: 20px;
+}
+
+footer .social-media a {
+    color: #fff;
+    margin-right: 10px;
+    text-decoration: none;
+}
