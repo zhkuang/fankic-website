@@ -74,7 +74,11 @@ header {
     justify-content: space-between;
 }
 
-.logo {
+.logo-wrapper {
+    display: flex;
+}
+
+.logo-wrapper .logo {
     width: 6.67rem;
     height: 2rem;
 }
@@ -371,6 +375,7 @@ footer .contact-wrapper .contact-text-email .contact-email {
     color: #FFFFFF;
     margin-right: 1.92rem;
     text-decoration: none;
+    margin-left: 1.67rem;
 }
 
 footer .contact-wrapper .contact-text-email .email-icon-wrapper {
@@ -386,4 +391,26 @@ footer .contact-wrapper .contact-text-email .email-icon-wrapper img {
     width: 3.33rem;
     height: 3.33rem;
     transform: translateY(22%);
+}
+
+footer .footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.08rem 0rem;
+}
+
+footer .footer-wrapper .footer-nav span {
+    text-align: center;
+    font-family: Gotham Book, Gotham Book;
+    font-weight: 400;
+    font-size: 1.17rem;
+    color: rgba(255,255,255,0.7);
+}
+
+footer .footer-social {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
 }
