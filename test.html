@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+      .container {
+          width: 200px;
+          height: 200px;
+          background: #000;
+          /* 创建一个圆形的剪裁路径 */
+          clip-path: circle(50px at 50% 50%);
+          /* 创建一个与剪裁路径相反的遮罩 */
+          -webkit-mask: clip-path(circle(50px at 50% 50%));
+          mask: clip-path(circle(50px at 50% 50%));
+          -webkit-mask-composite: xor;
+          mask-composite: exclude;
+      }
+  </style>
+</head>
+<body>
+<div class="container"></div>
+</body>
+</html>
