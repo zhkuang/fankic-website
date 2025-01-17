@@ -4,7 +4,7 @@
   function adjustFontSize() {
     const width = window.innerWidth;
     const baseWidth = 1440;
-    const baseFontSize = 12;
+    const baseFontSize = 11;
     const newFontSize = (width / baseWidth) * baseFontSize;
     document.documentElement.style.fontSize = newFontSize + 'px';
   }
