@@ -228,6 +228,19 @@ nav ul li a:hover {
     align-items: center;
 }
 
+.demo .video-wrapper .flag-wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    left: 2rem;
+    top: 2rem;
+}
+
+#demoFlag {
+    width: 4rem;
+}
+
 .demo .video-wrapper .demo-video {
     width: 100%;
     height: 100%;

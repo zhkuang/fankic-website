@@ -1,5 +1,6 @@
 (function () {
   const defaultLanguage = 'English';
+  const defaultFlag = 'US';
 
   function adjustFontSize() {
     const width = window.innerWidth;
@@ -44,7 +45,13 @@
     };
   }
 
+  function refreshFlag(targetFlag) {
+    const flagElem = document.getElementById('demoFlag');
+    flagElem.src = 'assets/flags/' + targetFlag + '.png';
+  }
+
   refreshVideo(defaultLanguage, true);
+  refreshFlag(defaultFlag);
 
   document.querySelectorAll('.demo-language-wrapper').forEach(wrapper => {
     wrapper.addEventListener('click', (event) => {
@@ -56,7 +63,9 @@
       wrapper.classList.toggle('demo-language-wrapper-active');
 
       const targetLanguage = event.currentTarget.getAttribute('data-language');
+      const targetFlag = event.currentTarget.getAttribute('data-flag');
       refreshVideo(targetLanguage)
+      refreshFlag(targetFlag)
     });
   })
 
